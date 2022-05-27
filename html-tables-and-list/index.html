@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Tables and List</title>
+    <style>
+        th,
+        td {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        table {
+            border-spacing: 5px;
+            border: 1px solid black;
+        }
+
+        caption {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%">
+        <caption>
+            <h1>School: St. Benedict high school</h1>
+            <h1>Teacher: Mr Ade</h1>
+            <h1>Class: SS2</h1>
+        </caption>
+        <thead>
+            <tr class="thead-r">
+                <th id="serial-number" rowspan="2">Serial Number</th>
+                <th id="students" rowspan="2">Students</th>
+                <th id="subjects" colspan="5">Subjects</th>
+                <th id="total-scores" rowspan="2" colspan="2">Total Scores</th>
+            </tr>
+            <tr class="thead-r">
+                <th>Mathematics</th>
+                <th>English</th>
+                <th>Physics</th>
+                <th>Chemistry</th>
+                <th>Biology</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tbody-r">
+                <td>1</td>
+                <td>AdeKunle</td>
+                <td class="score">72</td>
+                <td class="score">43</td>
+                <td class="score">78</td>
+                <td class="score">73</td>
+                <td class="score">37</td>
+                <td class="score"></td>
+            </tr>
+            <tr class="tbody-r">
+                <td>2</td>
+                <td>John</td>
+                <td class="score">42</td>
+                <td class="score">64</td>
+                <td class="score">70</td>
+                <td class="score">55</td>
+                <td class="score">58</td>
+                <td class="score"></td>
+            </tr>
+            <tr class="tbody-r">
+                <td class="score">3</td>
+                <td class="score">Peter</td>
+                <td class="score">62</td>
+                <td class="score">40</td>
+                <td class="score">73</td>
+                <td class="score">75</td>
+                <td class="score">99</td>
+                <td class="score"></td>
+            </tr>
+            <tr class="tbody-r">
+                <td>4</td>
+                <td>Rukayat</td>
+                <td class="score">77</td>
+                <td class="score">75</td>
+                <td class="score">78</td>
+                <td class="score">75</td>
+                <td class="score">82</td>
+                <td class="score"></td>
+            </tr>
+            <tr class="tbody-r">
+                <td>5</td>
+                <td>Paul</td>
+                <td class="score">72</td>
+                <td class="score">40</td>
+                <td class="score">72</td>
+                <td class="score">70</td>
+                <td class="score">97</td>
+                <td class="score"></td>
+            </tr>
+            <tr class="tbody-r">
+                <td>6</td>
+                <td>Victor</td>
+                <td class="score">76</td>
+                <td class="score">64</td>
+                <td class="score">48</td>
+                <td class="score">99</td>
+                <td class="score">37</td>
+                <td class="score"></td>
+            </tr>
+            <tr class="tbody-r">
+                <td>7</td>
+                <td>John</td>
+                <td class="score">62</td>
+                <td class="score">54</td>
+                <td class="score">78</td>
+                <td class="score">75</td>
+                <td class="score">64</td>
+                <td class="score"></td>
+            </tr>
+            <tr class="tbody-r">
+                <td>8</td>
+                <td>Doe</td>
+                <td class="score">52</td>
+                <td class="score">84</td>
+                <td class="score">48</td>
+                <td class="score">85</td>
+                <td class="score">27</td>
+                <td class="score"></td>
+            </tr>
+            <tr class="tbody-r">
+                <td>9</td>
+                <td>Stephen</td>
+                <td class="score">92</td>
+                <td class="score">44</td>
+                <td class="score">78</td>
+                <td class="score">65</td>
+                <td class="score">61</td>
+                <td class="score"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+
+<!-- Heading should contain details about the school, teacher, and class
+Ensure the Table Head(th) has a serial number, students, subjects, and total scores as columns.
+Ensure the Heading element has an id attribute
+Ensure your Table row (tr)  element has a class attribute.
+Ensure your table has a border attribute with a value of 1, cell padding, and cell spacing with a value of 5. 
+Ensure your total scores  has a colspan twice the score
+Ensure each subject score (td) has a class attribute. -->
+
+<!-- AdeKunle Mathematics 72, English 43, Physics 78, Chemistry 73, Biology 37
+
+John         Mathematics 42, English 64, Physics 70, Chemistry 55, Biology 58
+
+Peter        Mathematics 62, English 40, Physics 73, Chemistry 75, Biology 99
+
+Rukayat    Mathematics 77, English 75, Physics 78, Chemistry 75, Biology 82
+
+Paul          Mathematics 72, English 40, Physics 72, Chemistry 70, Biology 97
+
+Victor        Mathematics 76, English 64, Physics 48, Chemistry 99, Biology 37
+
+John         Mathematics 62,English 54, Physics 78, Chemistry 75, Biology 64
+
+Doe          Mathematics 52 , English 84 , Physics 48, Chemistry 85, Biology 27
+
+Stephen    Mathematics 92, English 44, Physics 78, Chemistry 65, Biology 61 -->
