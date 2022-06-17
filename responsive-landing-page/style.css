@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --red: hsl(0, 100%, 74%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+    --blue: hsl(248, 32%, 49%);
+    --green: hsl(154, 59%, 51%);
+
+    --shadow: 0px 7px 0px 0px var(--dark-blue);
+    --border-radius: 0.5rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    background: var(--red) url("./images/bg-intro-mobile.png") center;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+#cost {
+    background-color: var(--blue);
+    padding: 1rem 3.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-top: 3rem;
+}
+
+form {
+    margin-top: 2rem;
+    border-radius: var(--border-radius);
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset>div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 3rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--grayish-blue);
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+input[type="submit"] {
+    background-color: var(--green);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+input,
+small {
+    color: var(--grayish-blue);
+}
+
+label {
+    display: none;
+}
+
+small {
+    margin: 1rem 0;
+}
+
+span {
+    color: var(--red);
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url("./images/bg-intro-desktop.png");
+    }
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem;
+    }
+
+    main>div {
+        width: 50%;
+    }
+
+    #description {
+        padding: 4rem;
+        text-align: left;
+    }
+
+
+    #cost {
+        margin-top: auto;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    small {
+        margin-bottom: auto;
+    }
+}
